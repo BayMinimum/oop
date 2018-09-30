@@ -5,6 +5,8 @@ def word_count(file_path):
     file = open(file_path)
     for line in file:
         for word in line.split():
+            if word == '--':
+                continue
             word = word.lower() # case insensitive
             word = word.strip(string.punctuation) # remove punctuation
             '''
