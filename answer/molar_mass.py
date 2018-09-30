@@ -22,7 +22,7 @@ def parse_element(element_str):
     return symbol, quantity
 
 # Open file
-data_file = open('Periodic-Table.csv', encoding='windows-1252')
+data_file = open('../Periodic-Table.csv', encoding='windows-1252')
 
 # Create dictionary
 periodic_dict = table_to_dict(data_file)
